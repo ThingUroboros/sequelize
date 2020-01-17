@@ -403,7 +403,7 @@ export class QueryInterface {
   ): Promise<void>;
   public addIndex(
     tableName: string,
-    options: QueryInterfaceIndexOptions & { fields: string[] },
+    options: QueryInterfaceIndexOptions | { fields: string[] },
     rawTablename?: string
   ): Promise<void>;
 
